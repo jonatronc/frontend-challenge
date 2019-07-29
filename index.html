@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BusyBus</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://kit.fontawesome.com/00b6f0408c.js"></script>
+  </head>
+  <body>
+    <div class="container">
+
+
+      <header>
+        <!-- Status bar -->
+        <div class="status-bar">
+          <img src="../images/status-bar.png" alt="Status bar" />
+        </div>
+
+        <!-- Page title -->
+        <nav class="page-title">
+          <i class="fas fa-chevron-left"></i>
+          <h1>Washington and State</h1>
+        </nav>
+
+        <!-- Searchbar -->
+        <div class="search">
+          <i class="fas fa-search"></i>
+          <h2>Search stops</h2>
+        </div>
+
+
+        <!-- MAP and title -->
+        <section class="map-and-title">
+          <div class="map">
+            <img src="../images/map-content.png" alt="Bus location map" />
+          </div>
+          <div class="map-title">
+            <h1>Approaching busses</h1>
+          </div>
+        </section>
+
+
+
+        <!-- Route List -->
+        <section class="direction">
+          <h3>Route direction</h3>
+          <ul class="direction-list">
+            <li class="direction-list-item first-item"><a href="#north">North</a></li>
+            <li class="direction-list-item"><a href="#south">South</a></li>
+            <li class="direction-list-item"><a href="#East">East</a></li>
+            <li class="direction-list-item"><a href="#West">West</a></li>
+          </ul>
+        </section>
+      </header> <!-- End header -->
+
+
+        <!-- Route NORTH -->
+      <section class="route-list">
+        <div id = "north">
+          <div class="direction-header">
+            <h2>Northbound</h2>
+          </div>
+          <div class="cell">
+            <div class="left-column">
+              <div class="route">
+                <h1>151</h1>
+                <i class="fas fa-arrow-right"></i>
+                <h2>Devon/Clark</h2>
+              </div>
+              <p class = "destination">Arrives every 16m</p>
+            </div>
+            <div class="right-column">
+              <p>ETA 5m</p>
+              <i class="fas fa-angle-right"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Route SOUTH -->
+        <div id = "south">
+          <div class="direction-header">
+            <h2>Southbound</h2>
+          </div>
+          <div class="cell">
+            <div class="left-column">
+              <div class="route">
+                <h1>J14</h1>
+                <i class="fas fa-arrow-right"></i>
+                <h2>103rd/Stony Island</h2>
+              </div>
+              <p class = "destination">Arrives every 15m</p>
+            </div>
+            <div class="right-column">
+              <p>ETA 7m</p>
+              <i class="fas fa-angle-right"></i>
+            </div>
+          </div>
+          <div class="cell">
+            <div class="left-column">
+              <div class="route">
+                <h1>124</h1>
+                <i class="fas fa-arrow-right"></i>
+                <h2>Navy Pier</h2>
+              </div>
+              <p class = "destination">Arrives every 10m</p>
+            </div>
+            <div class="right-column">
+              <p>ETA 6m</p>
+              <i class="fas fa-angle-right"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Route EAST -->
+        <div >
+          <div class="direction-header" id = "east">
+            <h2>Eastbound</h2>
+          </div>
+          <div class="cell">
+            <div class="left-column">
+              <div class="route">
+                <h1>60</h1>
+                <i class="fas fa-arrow-right"></i>
+                <h2>Randolph/Harbor Dr</h2>
+              </div>
+              <p class = "destination">Arrives every 20m</p>
+            </div>
+            <div class="right-column">
+              <p>ETA 16m</p>
+              <i class="fas fa-angle-right"></i>
+            </div>
+          </div>
+          <div class="cell">
+            <div class="left-column">
+              <div class="route">
+                <h1>124</h1>
+                <i class="fas fa-arrow-right"></i>
+                <h2>Navy Pier</h2>
+              </div>
+              <p class = "destination">Arrives every 10m</p>
+            </div>
+            <div class="right-column">
+              <p>ETA 3m</p>
+              <i class="fas fa-angle-right"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Route WEST -->
+        <div id = "west">
+          <div class="direction-header">
+            <h2>Westbound</h2>
+          </div>
+          <div class="cell">
+            <div class="left-column">
+              <div class="route">
+                <h1>132A</h1>
+                <i class="fas fa-arrow-right"></i>
+                <h2> Jackson Park Express</h2>
+              </div>
+              <p class = "destination">Arrives every 15m</p>
+            </div>
+            <div class="right-column">
+              <p>ETA 5m</p>
+              <i class="fas fa-angle-right"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div> <!-- End container -->
+  </body>
+</html>
