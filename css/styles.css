@@ -22,7 +22,7 @@ h3 {
 .container {
   background-color: #FFF;
   width: 375px;
-  height: auto;
+  height: 812px;
   margin: 0 auto;
   margin-top: 36px;
   margin-bottom: 400px;
@@ -30,11 +30,7 @@ h3 {
 }
 
 header {
-  position: fixed;
-  left: 50%;
-  top: 0%;
-  transform: translateX(-50%);
-  z-index: 100;
+  margin: 0 auto;
   background-color: #FFF;
 }
 
@@ -114,9 +110,11 @@ header {
 
 /* ---- Route List ---- */
 .route-list {
-  margin-top: 480px;
-  margin: 432px 16px 0 16px;
+  height: 380px;
+  margin: 0px 8px 0 16px;
   padding-top: 24px;
+  overflow-y: scroll;
+  padding-right: 8px;
 }
 
 .direction-header {
@@ -192,19 +190,27 @@ header {
 /* Reroute */
 
 .reroute {
-  background-color: #e7e7e8;
-  padding: 16px 16px 0 16px;
+  background-color: #fff;
+  padding: 16px 0px 0 0px;
 }
 
 .reroute .direction-header {
-  background-color: #808084;
+  background-color: #ffb300;
+  color: #000;
+}
+
+.route i.fa-exclamation-triangle {
+  color:#ffb300;
+  padding: 0px;
+  margin: 0px;
 }
 
 /* Out of Service */
 
 .no-service {
   background-color: #e7e7e8;
-  padding: 0px 16px 0 16px;
+  padding: 16px 16px 0 16px;
+  margin-bottom: 32px;
 }
 
 .no-service .direction-header {
