@@ -9,14 +9,12 @@
     <script src="https://kit.fontawesome.com/00b6f0408c.js"></script>
   </head>
   <body>
-    <div class="container">
+    <main class="container">
 
 
       <header>
         <!-- Status bar -->
-        <div class="status-bar">
-          <img src="../images/status-bar.png" alt="Status bar" />
-        </div>
+        <img src="../images/status-bar.png" alt="Status bar" class="status-bar"/>
 
         <!-- Page title -->
         <nav class="page-title">
@@ -25,36 +23,28 @@
         </nav>
 
         <!-- Searchbar -->
-        <div class="search">
+        <section class="search">
+          <input type="text" name="search" placeholder="Search stops">
           <i class="fas fa-search"></i>
-          <h2>Search stops</h2>
-        </div>
+        </section>
 
         <!-- MAP and title -->
-        <section class="map-and-title">
-          <div class="map">
-            <img src="../images/map-content.png" alt="Bus location map" />
-          </div>
-          <div class="map-title">
-            <h1>Approaching busses</h1>
-          </div>
-        </section>
+        <img src="../images/map-content.png" alt="Bus location map" class="map"/>
+        <h1 class="map-title">Approaching busses</h1>
       </header> <!-- End header -->
 
       <!-- ROUTE LIST -->
-      <section class="route-list">
+      <ul class="route-list">
         <!-- Route EAST -->
-        <div id="east">
-          <div class="direction-header">
-            <h2>Eastbound</h2>
-          </div>
+        <li>
+          <h2 class="direction-header">Eastbound</h2>
           <ul class="cell">
             <li class="left-column">
-              <div class="route">
+              <hgroup class="route">
                 <h1>60</h1>
                 <i class="fas fa-arrow-right"></i>
                 <h2>Randolph/Harbor Dr</h2>
-              </div>
+              </hgroup>
               <p class = "destination">Arrives every 20m</p>
             </li>
             <li class="right-column">
@@ -64,11 +54,11 @@
           </ul>
           <ul class="cell">
             <li class="left-column">
-              <div class="route">
+              <hgroup class="route">
                 <h1>124</h1>
                 <i class="fas fa-arrow-right"></i>
                 <h2>Navy Pier</h2>
-              </div>
+              </hgroup>
               <p class = "destination">Arrives every 10m</p>
             </li>
             <li class="right-column">
@@ -76,21 +66,19 @@
               <i class="fas fa-angle-right"></i>
             </li>
           </ul>
-        </div>
+        </li>
 
 
         <!-- Route NORTH -->
-        <div id = "north">
-          <div class="direction-header">
-            <h2>Northbound</h2>
-          </div>
+        <li>
+          <h2 class="direction-header">Northbound</h2>
           <ul class="cell">
             <li class="left-column">
-              <div class="route">
+              <hgroup class="route">
                 <h1>151</h1>
                 <i class="fas fa-arrow-right"></i>
                 <h2>Devon/Clark</h2>
-              </div>
+              </hgroup>
               <p class = "destination">Arrives every 16m</p>
             </li>
             <li class="right-column">
@@ -98,20 +86,18 @@
               <i class="fas fa-angle-right"></i>
             </li>
           </ul>
-        </div>
+        </li>
 
         <!-- Route SOUTH -->
-        <div id = "south">
-          <div class="direction-header">
-            <h2>Southbound</h2>
-          </div>
+        <li>
+          <h2 class="direction-header">Southbound</h2>
           <ul class="cell">
             <li class="left-column">
-              <div class="route">
+              <hgroup class="route">
                 <h1>J14</h1>
                 <i class="fas fa-arrow-right"></i>
                 <h2>103rd/Stony Island</h2>
-              </div>
+              </hgroup>
               <p class = "destination">Arrives every 15m</p>
             </li>
             <li class="right-column">
@@ -121,11 +107,11 @@
           </ul>
           <ul class="cell no-border">
             <li class="left-column">
-              <div class="route">
+              <hgroup class="route">
                 <h1>124</h1>
                 <i class="fas fa-arrow-right"></i>
                 <h2>Navy Pier</h2>
-              </div>
+              </hgroup>
               <p class = "destination">Arrives every 10m</p>
             </li>
             <li class="right-column">
@@ -133,78 +119,70 @@
               <i class="fas fa-angle-right"></i>
             </li>
           </ul>
-        </div>
+        </li>
         <!-- REROUTE -->
-        <div class="reroute">
-          <div class="direction-header">
-            <h2>Reroute</h2>
-          </div>
-          <div class="cell">
-            <div class="left-column">
-              <div class="route">
+        <li class="reroute">
+          <h2 class="direction-header">Reroute</h2>
+          <ul class="cell">
+            <li class="left-column">
+              <hgroup class="route">
                 <i class="fas fa-exclamation-triangle"></i>
                 <h1>6x</h1>
                 <i class="fas fa-arrow-right"></i>
                 <h2> Jackson Park Express</h2>
-              </div>
+              </hgroup>
               <p class = "destination"></p>
-            </div>
-            <div class="right-column">
-              <p></p>
+            </li>
+            <li class="right-column">
               <i class="fas fa-angle-right"></i>
-            </div>
-          </div>
-        </div>
+            </li>
+          </ul>
+        </li>
         <!-- NO SERVICE -->
-        <div class="no-service">
-          <div class="direction-header">
-            <h2>Out of service</h2>
-          </div>
+        <li class="no-service">
+          <h2 class="direction-header">Out of service</h2>
           <ul class="cell">
             <li class="left-column">
-              <div class="route">
+              <hgroup class="route">
                 <h1>4</h1>
                 <i class="fas fa-arrow-right"></i>
                 <h2>Cottage Grove</h2>
-              </div>
+              </hgroup>
               <p class = "destination">Resumes 12:10 a.m.</p>
             </li>
             <li class="right-column">
-              <p></p>
               <i class="fas fa-angle-right"></i>
             </li>
           </ul>
           <ul class="cell">
             <li class="left-column">
-              <div class="route">
+              <hgroup class="route">
                 <h1>20</h1>
                 <i class="fas fa-arrow-right"></i>
                 <h2>Madison</h2>
-              </div>
+              </hgroup>
               <p class = "destination">Resumes 12:10 a.m.</p>
             </li>
             <li class="right-column">
-              <p></p>
               <i class="fas fa-angle-right"></i>
             </li>
           </ul>
           <ul class="cell no-border">
             <li class="left-column">
-              <div class="route">
+              <hgroup class="route">
                 <h1>157</h1>
                 <i class="fas fa-arrow-right"></i>
                 <h2>Streeterville/Taylor</h2>
-              </div>
+              </hgroup>
               <p class = "destination">Resumes 6:00 a.m.</p>
             </li>
             <li class="right-column">
-              <p></p>
               <i class="fas fa-angle-right"></i>
             </li>
           </ul>
-        </div>
-      </section>
+        </li>
+      </ul>
 
-    </div> <!-- End container -->
+    </main> <!-- End container -->
   </body>
 </html>
